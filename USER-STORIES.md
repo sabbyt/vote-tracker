@@ -7,6 +7,8 @@ User stories for Vote Tracker of:
 Epic agile user story example:
 - As an internet user, I can use this vote tracker to see who is the most evil character in film and TV.
 
+- As a person new to the horror/thriller genre in film, I can use this vote tracker to suggest films and TV shows to watch.
+
 - As halloween is coming up, I can use this vote tracker to select themes for my halloween party/movie night.
 
 - As halloween is coming up, I can use this vote tracker for inspiration for my costume.
