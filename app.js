@@ -66,10 +66,21 @@ function randomImg2(){
   var movie2 = document.getElementById("movie2");
   movie2.appendChild(document.createTextNode(randomPhoto2["movie"]));
 }
+
+//form js here
+var refresh = function(e) {
+  e.preventDefault();
+  // var titleRemove = document.getElementById("title1");
+  // var containerTitle = titleRemove.parentNode;
+  // containerTitle.removeChild(titleRemove);
+  randomImg1();
+  randomImg2();
+};
+
 //calling photo generator functions
 randomImg1();
 randomImg2();
 
 //voting system event listener
 var vote1 = document.getElementById('photoGen1');
-vote1.addEventListener('click', vote);
+vote1.addEventListener('click', refresh);
