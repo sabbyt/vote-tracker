@@ -14,28 +14,31 @@ var evilCharacters = [];
 
 //creates evil characters objects within the array rather than as an image
 createEvil("img/americanpsycho-patrickbateman.jpg", "Patrick Bateman", "American Psycho");
-createEvil("img/austinpowers-drevil.jpg", "Dr. Evil", "Austin Powers");
-createEvil("img/batman-joker.jpg", "The Joker", "The Batman Series");
-createEvil('img/chucky.jpg', "Chucky", "Chucky");
+createEvil("img/austinpowers-drevil.jpg", "Dr. Evil", "The Austin Powers Series");
+createEvil("img/batman-joker.jpg", "The Joker", "The Dark Knight");
+createEvil('img/chucky.jpg', "Chucky", "Child's Play");
 createEvil('img/cuckoo-nurseratched.jpg', "Nurse Ratched", "One Flew Over the Cuckoos Nest");
-createEvil('img/darth-vader.jpg', "Darth Vader", "Star Wars");
+createEvil('img/darth-vader.jpg', "Darth Vader", "The Star Wars Saga");
 createEvil('img/freddy-krueger.jpg', "Freddy Krueger", "A Nightmare on Elm Street");
 createEvil('img/fridaythe13-PamelaVoorhees.png', "Pamela Voorhees", "Friday the 13th");
 createEvil('img/godfather-michaelcorleone.jpg', "Michael Corleone", "The Godfather Trilogy");
 createEvil('img/got-joeffreybaratheon.jpg', "Joeffrey Baratheon", "Game of Thrones");
 createEvil('img/hercules-hades.png', "Hades", "Hercules");
 createEvil('img/halloween-michaelmyers.jpg', "Michael Myers", "Halloween");
-createEvil('img/hanniballecter.jpg', "Hannibal Lecter", "Hannibal");
+createEvil('img/hanniballecter.jpg', "Dr. Hannibal Lecter", "Hannibal");
 createEvil('img/harrypotter-lordvoldemort.jpg', "Lord Voldemort", "The Harry Potter Series");
 createEvil('img/hellbound-pinhead.jpg', "Pinhead", "Hellraiser");
 createEvil('img/hp-BellatrixLestrange.png', "Bellatrix Lestrange", "The Harry Potter Series");
 createEvil('img/it-pennywise.jpg', "Pennywise", "It");
-createEvil('img/lotr-saruman.jpg', "Saruman", "The Lord of the Rings");
-createEvil('img/lotr-Sauron.jpg', "Sauron", "The Lord of the Rings");
+createEvil('img/lotr-saruman.jpg', "Saruman", "The Lord of the Rings Series");
+createEvil('img/lotr-Sauron.jpg', "Sauron", "The Lord of the Rings Series");
 createEvil('img/misery-Annie Wilkes.jpg', "Annie Wilkes", "Misery");
-createEvil('img/saw-jigsaw.jpg', "Jigsaw", "Saw");
+createEvil('img/saw-jigsaw.jpg', "Jigsaw", "The Saw Franchise");
 createEvil('img/thelionking-scar.jpg', "Scar", "The Lion King");
-createEvil("img/theshining-jacktorrance.jpg", "Jack Torrance", "The Shining")
+createEvil("img/theshining-jacktorrance.jpg", "Jack Torrance", "The Shining");
+createEvil("img/Cruella-de-vil-101-dalmatians.jpg", "Cruella de Vil", "101 Dalmatians");
+createEvil("img/Psycho-NormanBates.jpg", "Norman Bates", "Psycho");
+createEvil("img/wizardofoz-TheWickedWitchoftheWest.jpg", "The Wicked Witch of the West", "The Wizard of Oz");
 
 //photo randomiser
 var randomNumber = function() {
