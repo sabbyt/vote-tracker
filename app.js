@@ -1,86 +1,137 @@
 //image constructor
-function Image(src, title, movie) {
+function EvilImage(src, character, movie, vote) {
   this.src = src;
-  this.title = title;
+  this.character = character;
   this.movie = movie;
+  this.vote = 0;
 }
 
-function createEvil(img, name, movie) {
-  var x = new Image(img, name, movie);
+function createEvil(img, name, movie, vote) {
+  var x = new EvilImage(img, name, movie, vote);
   evilCharacters.push(x);
 }
+
 // array of images
 var evilCharacters = [];
-
+var random1 = 0, random2 = 1;
 //creates evil characters objects within the array rather than as an image
-createEvil("img/americanpsycho-patrickbateman.jpg", "Patrick Bateman", "American Psycho");
-createEvil("img/austinpowers-drevil.jpg", "Dr. Evil", "The Austin Powers Series");
-createEvil("img/batman-joker.jpg", "The Joker", "The Dark Knight");
-createEvil('img/chucky.jpg', "Chucky", "Child's Play");
-createEvil('img/cuckoo-nurseratched.jpg', "Nurse Ratched", "One Flew Over the Cuckoos Nest");
-createEvil('img/darth-vader.jpg', "Darth Vader", "The Star Wars Saga");
-createEvil('img/freddy-krueger.jpg', "Freddy Krueger", "A Nightmare on Elm Street");
-createEvil('img/fridaythe13-PamelaVoorhees.png', "Pamela Voorhees", "Friday the 13th");
-createEvil('img/godfather-michaelcorleone.jpg', "Michael Corleone", "The Godfather Trilogy");
-createEvil('img/got-joeffreybaratheon.jpg', "Joeffrey Baratheon", "Game of Thrones");
-createEvil('img/hercules-hades.png', "Hades", "Hercules");
-createEvil('img/halloween-michaelmyers.jpg', "Michael Myers", "Halloween");
-createEvil('img/hanniballecter.jpg', "Dr. Hannibal Lecter", "Hannibal");
-createEvil('img/harrypotter-lordvoldemort.jpg', "Lord Voldemort", "The Harry Potter Series");
-createEvil('img/hellbound-pinhead.jpg', "Pinhead", "Hellraiser");
-createEvil('img/hp-BellatrixLestrange.png', "Bellatrix Lestrange", "The Harry Potter Series");
-createEvil('img/it-pennywise.jpg', "Pennywise", "It");
-createEvil('img/lotr-saruman.jpg', "Saruman", "The Lord of the Rings Series");
-createEvil('img/lotr-Sauron.jpg', "Sauron", "The Lord of the Rings Series");
-createEvil('img/misery-Annie Wilkes.jpg', "Annie Wilkes", "Misery");
-createEvil('img/saw-jigsaw.jpg', "Jigsaw", "The Saw Franchise");
-createEvil('img/thelionking-scar.jpg', "Scar", "The Lion King");
-createEvil("img/theshining-jacktorrance.jpg", "Jack Torrance", "The Shining");
-createEvil("img/Cruella-de-vil-101-dalmatians.jpg", "Cruella de Vil", "101 Dalmatians");
-createEvil("img/Psycho-NormanBates.jpg", "Norman Bates", "Psycho");
-createEvil("img/wizardofoz-TheWickedWitchoftheWest.jpg", "The Wicked Witch of the West", "The Wizard of Oz");
-//photo randomiser
+createEvil("img/americanpsycho-patrickbateman.jpg", "Patrick Bateman", "American Psycho", 0);
+createEvil("img/austinpowers-drevil.jpg", "Dr. Evil", "The Austin Powers Series", 0);
+createEvil("img/batman-joker.jpg", "The Joker", "The Dark Knight", 0);
+createEvil('img/chucky.jpg', "Chucky", "Child's Play", 0);
+createEvil('img/cuckoo-nurseratched.jpg', "Nurse Ratched", "One Flew Over the Cuckoos Nest", 0);
+createEvil('img/darth-vader.jpg', "Darth Vader", "The Star Wars Saga", 0);
+createEvil('img/freddy-krueger.jpg', "Freddy Krueger", "A Nightmare on Elm Street", 0);
+createEvil('img/fridaythe13-PamelaVoorhees.png', "Pamela Voorhees", "Friday the 13th", 0);
+createEvil('img/godfather-michaelcorleone.jpg', "Michael Corleone", "The Godfather Trilogy", 0);
+createEvil('img/got-joeffreybaratheon.jpg', "Joeffrey Baratheon", "Game of Thrones", 0);
+createEvil('img/hercules-hades.png', "Hades", "Hercules", 0);
+createEvil('img/halloween-michaelmyers.jpg', "Michael Myers", "Halloween", 0);
+createEvil('img/hanniballecter.jpg', "Dr. Hannibal Lecter", "Hannibal", 0);
+createEvil('img/harrypotter-lordvoldemort.jpg', "Lord Voldemort", "The Harry Potter Series", 0);
+createEvil('img/hellbound-pinhead.jpg', "Pinhead", "Hellraiser", 0);
+createEvil('img/hp-BellatrixLestrange.png', "Bellatrix Lestrange", "The Harry Potter Series", 0);
+createEvil('img/it-pennywise.jpg', "Pennywise", "It", 0);
+createEvil('img/lotr-saruman.jpg', "Saruman", "The Lord of the Rings Series", 0);
+createEvil('img/lotr-Sauron.jpg', "Sauron", "The Lord of the Rings Series", 0);
+createEvil('img/misery-Annie Wilkes.jpg', "Annie Wilkes", "Misery", 0);
+createEvil('img/saw-jigsaw.jpg', "Jigsaw", "The Saw Franchise", 0);
+createEvil('img/thelionking-scar.jpg', "Scar", "The Lion King", 0);
+createEvil("img/theshining-jacktorrance.jpg", "Jack Torrance", "The Shining", 0);
+createEvil("img/Cruella-de-vil-101-dalmatians.jpg", "Cruella de Vil", "101 Dalmatians", 0);
+createEvil("img/Psycho-NormanBates.jpg", "Norman Bates", "Psycho", 0);
+createEvil("img/wizardofoz-TheWickedWitchoftheWest.jpg", "The Wicked Witch of the West", "The Wizard of Oz", 0);
+
+//Generate a random number
 var randomNumber = function() {
   return Math.floor(Math.random() * (evilCharacters.length - 1)) + 1;
 }
-//insert random photo 1
-function randomImg1(){
-  var random1 = randomNumber();
+
+//Display the images
+var randomImg = function(){
+//random number prevent same img displaying
+  random1 = randomNumber();
+  random2 = randomNumber();
+  if (random1 == random2) {
+    random2 = randomNumber();
+    // console.log("Same number, number 2 regened");
+    console.log(random1);
+    console.log(random2);
+  }
+  else {
+    console.log(random1);
+    console.log(random2);
+  }
+//input random photo1
   var randomPhoto1 = (evilCharacters[random1]);
-  console.log(random1);
   document.getElementById("photoGen1").src = randomPhoto1["src"];
+  console.log('vote: ' + randomPhoto1.vote);
   var title1 = document.getElementById("photoName1");
-  title1.appendChild(document.createTextNode(randomPhoto1["title"]));
+  title1.appendChild(document.createTextNode(randomPhoto1["character"]));
   var movie1 = document.getElementById("movie1");
   movie1.appendChild(document.createTextNode(randomPhoto1["movie"]));
-}
-//insert random photo 2
-function randomImg2(){
-  var random2 = randomNumber();
+  // console.log(title1);
+  // console.log(movie1);
+//input random photo2
   var randomPhoto2 = (evilCharacters[random2]);
-  console.log(evilCharacters);
-  console.log(random2);
   document.getElementById("photoGen2").src = randomPhoto2["src"];
   var title2 = document.getElementById("photoName2");
-  title2.appendChild(document.createTextNode(randomPhoto2["title"]));
+  title2.appendChild(document.createTextNode(randomPhoto2["character"]));
   var movie2 = document.getElementById("movie2");
   movie2.appendChild(document.createTextNode(randomPhoto2["movie"]));
+  // console.log(title2);
+  // console.log(movie2);
 }
 
-//form js here
-var refresh = function(e) {
+//calling photo generator function
+randomImg();
+
+//function to refresh imgs, characters and titles
+var nextPhoto1 = function(e) {
   e.preventDefault();
-  // var titleRemove = document.getElementById("title1");
-  // var containerTitle = titleRemove.parentNode;
-  // containerTitle.removeChild(titleRemove);
-  randomImg1();
-  randomImg2();
+  console.log("Counter check random number: " + random1);
+  evilCharacters[random1].vote+=1;
+  console.log("New vote number: " + evilCharacters[random1].vote);
+
+  var titleRemove1 = document.getElementById("photoName1");
+  titleRemove1.removeChild(titleRemove1.childNodes[0]);
+  var movieRemove1 = document.getElementById("movie1");
+  movieRemove1.removeChild(movieRemove1.childNodes[0]);
+  console.log(movieRemove1.childNodes);
+
+  var titleRemove2 = document.getElementById("photoName2");
+  var movieRemove2 = document.getElementById("movie2");
+  titleRemove2.removeChild(titleRemove2.childNodes[0]);
+  movieRemove2.removeChild(movieRemove2.childNodes[0]);
+  console.log(movieRemove2.childNodes);
+//recall img function to insert new photos
+  randomImg();
 };
 
-//calling photo generator functions
-randomImg1();
-randomImg2();
+var nextPhoto2 = function(e) {
+  e.preventDefault();
+  console.log("Counter check random number: " + random2);
+  evilCharacters[random2].vote+=1;
+  console.log("New vote number: " + evilCharacters[random2].vote);
+
+  var titleRemove1 = document.getElementById("photoName1");
+  titleRemove1.removeChild(titleRemove1.childNodes[0]);
+  var movieRemove1 = document.getElementById("movie1");
+  movieRemove1.removeChild(movieRemove1.childNodes[0]);
+  console.log(movieRemove1.childNodes);
+
+  var titleRemove2 = document.getElementById("photoName2");
+  var movieRemove2 = document.getElementById("movie2");
+  titleRemove2.removeChild(titleRemove2.childNodes[0]);
+  movieRemove2.removeChild(movieRemove2.childNodes[0]);
+  console.log(movieRemove2.childNodes);
+//recall img function to insert new photos
+  randomImg();
+};
 
 //voting system event listener
 var vote1 = document.getElementById('photoGen1');
-vote1.addEventListener('click', refresh);
+vote1.addEventListener('click', nextPhoto1, false);
+
+var vote2 = document.getElementById('photoGen2');
+vote2.addEventListener('click', nextPhoto2, false);

@@ -14,3 +14,8 @@
 -Custom fonts:
   - https://fonts.googleapis.com/css?family=Marck+Script
   - https://fonts.googleapis.com/css?family=Gloria+Hallelujah
+
+10/13/2015:
+- Built error check that same photo doesn't appear twice.
+- Added refresh for photo, movie title and character name.
+- Started building the tracker and counter.
