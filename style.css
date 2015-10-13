@@ -1,0 +1,57 @@
+header, section, article, footer, figure {
+  display: block;
+}
+
+header, footer {
+  border: solid 4px;
+  border-color: #040919;
+  text-align: center;
+  max-height: 20%;
+  font-family: 'Marck Script', cursive;
+  font-size: 1.5em;
+}
+
+header h1 {
+  font-family: 'Gloria Hallelujah', cursive;
+  margin-bottom: 55px;
+}
+
+section {
+  font-family: 'Marck Script', cursive;
+  text-align: center;
+  font-size: 1.8em;
+}
+
+section h1 {
+  margin-bottom: -10px;
+}
+
+section h4 {
+margin-top: -10px;
+}
+
+article {
+  width: 45%;
+  display: inline-block;
+  text-align: center;
+}
+
+figure img {
+  border: none;
+  display: block;
+  width: 200px;
+  position: relative;
+  left: 30%;
+
+}
+
+footer p img {
+  margin-top: -10px;
+  margin-bottom: -20px;
+  padding-right: 10px;
+}
+
+#logo {
+  width:200px;
+  margin-bottom: -50px;
+}
