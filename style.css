@@ -65,3 +65,13 @@ footer p img {
   width:200px;
   margin-bottom: -50px;
 }
+
+#photoGen1:hover {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+
+#photoGen2:hover {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}

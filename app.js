@@ -39,12 +39,10 @@ createEvil("img/theshining-jacktorrance.jpg", "Jack Torrance", "The Shining");
 createEvil("img/Cruella-de-vil-101-dalmatians.jpg", "Cruella de Vil", "101 Dalmatians");
 createEvil("img/Psycho-NormanBates.jpg", "Norman Bates", "Psycho");
 createEvil("img/wizardofoz-TheWickedWitchoftheWest.jpg", "The Wicked Witch of the West", "The Wizard of Oz");
-
 //photo randomiser
 var randomNumber = function() {
   return Math.floor(Math.random() * (evilCharacters.length - 1)) + 1;
 }
-
 //insert random photo 1
 function randomImg1(){
   var random1 = randomNumber();
@@ -56,7 +54,6 @@ function randomImg1(){
   var movie1 = document.getElementById("movie1");
   movie1.appendChild(document.createTextNode(randomPhoto1["movie"]));
 }
-
 //insert random photo 2
 function randomImg2(){
   var random2 = randomNumber();
@@ -69,6 +66,10 @@ function randomImg2(){
   var movie2 = document.getElementById("movie2");
   movie2.appendChild(document.createTextNode(randomPhoto2["movie"]));
 }
-
+//calling photo generator functions
 randomImg1();
 randomImg2();
+
+//voting system event listener
+var vote1 = document.getElementById('photoGen1');
+vote1.addEventListener('click', vote);
