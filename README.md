@@ -8,7 +8,7 @@
 - Added preliminary CSS and photo placeholders.
 - Completed image randomiser, image constructor and successfully pushed image into index.html.
 - Colour palette: https://color.adobe.com/Theme-3-color-theme-6978341/
--Custom fonts:
+- Custom fonts:
   - https://fonts.googleapis.com/css?family=Marck+Script
   - https://fonts.googleapis.com/css?family=Gloria+Hallelujah
 
