@@ -138,3 +138,32 @@ vote1.addEventListener('click', nextPhoto1, false);
 
 var vote2 = document.getElementById('photoGen2');
 vote2.addEventListener('click', nextPhoto2, false);
+
+//array of data for chart
+var data = {
+    labels: [evilCharacters[0].character, evilCharacters[1].character, evilCharacters[2].character, evilCharacters[3].character, evilCharacters[4].character, evilCharacters[5].character, evilCharacters[6].character, evilCharacters[7].character, evilCharacters[8].character, evilCharacters[9].character, evilCharacters[10].character, evilCharacters[11].character, evilCharacters[12].character, evilCharacters[13].character, evilCharacters[14].character, evilCharacters[15].character, evilCharacters[16].character, evilCharacters[17].character, evilCharacters[18].character, evilCharacters[19].character, evilCharacters[20].character, evilCharacters[21].character, evilCharacters[22].character, evilCharacters[23].character, evilCharacters[24].character, evilCharacters[25].character],
+    datasets: [
+        {
+            label: "Votes",
+            fillColor: "rgba(220,220,220,0.5)",
+            strokeColor: "rgba(220,220,220,0.8)",
+            highlightFill: "rgba(220,220,220,0.75)",
+            highlightStroke: "rgba(220,220,220,1)",
+            votes: [5, 2, 3, 1]
+        }
+    ]
+};
+
+//putting data chart into html
+var context = document.getElementById('voteChart').getContext('2d');
+var myBarChart = new Chart(context).Bar(data, {
+  //animation options
+  scaleBeginAtZero : true,
+  scaleGridLineColor : "rgba(0,0,0,.05)",
+  barValueSpacing : 5,
+  barDatasetSpacing : 1
+});
+
+myBarChart.datasets[0].votes[2].value = 50;
+// Would update the first dataset's value of 'March' to be 50
+myBarChart.update();
