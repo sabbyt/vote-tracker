@@ -18,4 +18,5 @@
 10/13/2015:
 - Built error check that same photo doesn't appear twice.
 - Added refresh for photo, movie title and character name.
-- Started building the tracker and counter.
+- Finished building working counter.
+- Started charting votes.

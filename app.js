@@ -13,7 +13,8 @@ function createEvil(img, name, movie, vote) {
 
 // array of images
 var evilCharacters = [];
-var random1 = 0, random2 = 1;
+//var of random number assignments
+var random1 = 0, random2 = 0;
 //creates evil characters objects within the array rather than as an image
 createEvil("img/americanpsycho-patrickbateman.jpg", "Patrick Bateman", "American Psycho", 0);
 createEvil("img/austinpowers-drevil.jpg", "Dr. Evil", "The Austin Powers Series", 0);
@@ -83,12 +84,13 @@ var randomImg = function(){
   // console.log(movie2);
 }
 
-//calling photo generator function
+//calling photo generator function on load
 randomImg();
 
 //function to refresh imgs, characters and titles
 var nextPhoto1 = function(e) {
   e.preventDefault();
+  //counter for votes
   console.log("Counter check random number: " + random1);
   evilCharacters[random1].vote+=1;
   console.log("New vote number: " + evilCharacters[random1].vote);
@@ -110,6 +112,7 @@ var nextPhoto1 = function(e) {
 
 var nextPhoto2 = function(e) {
   e.preventDefault();
+  //counter for votes
   console.log("Counter check random number: " + random2);
   evilCharacters[random2].vote+=1;
   console.log("New vote number: " + evilCharacters[random2].vote);
