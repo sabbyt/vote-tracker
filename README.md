@@ -7,10 +7,7 @@
 - Built in basic HTML design.
 - Added preliminary CSS and photo placeholders.
 - Completed image randomiser, image constructor and successfully pushed image into index.html.
-
-- Colour palette:
-    https://color.adobe.com/Theme-3-color-theme-6978341/
-
+- Colour palette: https://color.adobe.com/Theme-3-color-theme-6978341/
 -Custom fonts:
   - https://fonts.googleapis.com/css?family=Marck+Script
   - https://fonts.googleapis.com/css?family=Gloria+Hallelujah
@@ -20,3 +17,6 @@
 - Added refresh for photo, movie title and character name.
 - Finished building working counter.
 - Started charting votes.
+
+10/14/2015:
+-
