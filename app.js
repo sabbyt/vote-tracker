@@ -66,7 +66,6 @@ var randomImg = function(){
 //input random photo1
   var randomPhoto1 = (evilCharacters[random1]);
   document.getElementById("photoGen1").src = randomPhoto1["src"];
-  console.log('vote: ' + randomPhoto1.vote);
   var title1 = document.getElementById("photoName1");
   title1.appendChild(document.createTextNode(randomPhoto1["character"]));
   var movie1 = document.getElementById("movie1");
@@ -83,7 +82,6 @@ var randomImg = function(){
   // console.log(title2);
   // console.log(movie2);
 }
-
 //calling photo generator function on load
 randomImg();
 
@@ -91,21 +89,22 @@ randomImg();
 var nextPhoto1 = function(e) {
   e.preventDefault();
   //counter for votes
-  console.log("Counter check random number: " + random1);
+  // console.log("Left was clicked");
+  // console.log("Counter check random number: " + random1);
   evilCharacters[random1].vote+=1;
-  console.log("New vote number: " + evilCharacters[random1].vote);
+  console.log(evilCharacters[random1].character + " vote TOTAL: " + evilCharacters[random1].vote);
 
   var titleRemove1 = document.getElementById("photoName1");
   titleRemove1.removeChild(titleRemove1.childNodes[0]);
   var movieRemove1 = document.getElementById("movie1");
   movieRemove1.removeChild(movieRemove1.childNodes[0]);
-  console.log(movieRemove1.childNodes);
+  // console.log(movieRemove1.childNodes);
 
   var titleRemove2 = document.getElementById("photoName2");
   var movieRemove2 = document.getElementById("movie2");
   titleRemove2.removeChild(titleRemove2.childNodes[0]);
   movieRemove2.removeChild(movieRemove2.childNodes[0]);
-  console.log(movieRemove2.childNodes);
+  // console.log(movieRemove2.childNodes);
 //recall img function to insert new photos
   randomImg();
 };
@@ -113,21 +112,22 @@ var nextPhoto1 = function(e) {
 var nextPhoto2 = function(e) {
   e.preventDefault();
   //counter for votes
-  console.log("Counter check random number: " + random2);
+  // console.log("Right was clicked");
+  // console.log("Counter check random number: " + random2);
   evilCharacters[random2].vote+=1;
-  console.log("New vote number: " + evilCharacters[random2].vote);
+  console.log(evilCharacters[random2].character + " vote TOTAL: " + evilCharacters[random2].vote);
 
-  var titleRemove1 = document.getElementById("photoName1");
-  titleRemove1.removeChild(titleRemove1.childNodes[0]);
-  var movieRemove1 = document.getElementById("movie1");
-  movieRemove1.removeChild(movieRemove1.childNodes[0]);
-  console.log(movieRemove1.childNodes);
+  var titleRemove2 = document.getElementById("photoName1");
+  titleRemove2.removeChild(titleRemove2.childNodes[0]);
+  var movieRemove2 = document.getElementById("movie1");
+  movieRemove2.removeChild(movieRemove2.childNodes[0]);
+  // console.log(movieRemove2.childNodes);
 
   var titleRemove2 = document.getElementById("photoName2");
   var movieRemove2 = document.getElementById("movie2");
   titleRemove2.removeChild(titleRemove2.childNodes[0]);
   movieRemove2.removeChild(movieRemove2.childNodes[0]);
-  console.log(movieRemove2.childNodes);
+  // console.log(movieRemove2.childNodes);
 //recall img function to insert new photos
   randomImg();
 };
