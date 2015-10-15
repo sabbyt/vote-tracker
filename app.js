@@ -4,7 +4,7 @@ function EvilImage(src, label, movie, value, color, highlight) {
   this.label = label;
   this.movie = movie;
   this.value = value;
-  this.color = color,
+  this.color = "#024959";
   this.highlight = "#FF5A5E"
 }
 
@@ -18,32 +18,32 @@ var evilCharacters = [];
 //var of random number assignments
 var random1 , random2;
 //creates evil characters objects within the array rather than as an image
-createEvil("img/americanpsycho-patrickbateman.jpg", "Patrick Bateman", "American Psycho", 0, "#D9043D");
-createEvil("img/austinpowers-drevil.jpg", "Dr. Evil", "The Austin Powers Series", 0, "9CC1D9");
-createEvil("img/batman-joker.jpg", "The Joker", "The Dark Knight", 0, "#D9043D");
-createEvil('img/chucky.jpg', "Chucky", "Child's Play", 0, "9CC1D9");
-createEvil('img/cuckoo-nurseratched.jpg', "Nurse Ratched", "One Flew Over the Cuckoos Nest", 0, "#D9043D");
-createEvil('img/darth-vader.jpg', "Darth Vader", "The Star Wars Saga", 0, "9CC1D9");
-createEvil('img/freddy-krueger.jpg', "Freddy Krueger", "A Nightmare on Elm Street", 0, "#D9043D");
-createEvil('img/fridaythe13-PamelaVoorhees.png', "Pamela Voorhees", "Friday the 13th", 0, "9CC1D9");
-createEvil('img/godfather-michaelcorleone.jpg', "Michael Corleone", "The Godfather Trilogy", 0, "#D9043D");
-createEvil('img/got-joeffreybaratheon.jpg', "Joeffrey Baratheon", "Game of Thrones", 0, "9CC1D9");
-createEvil('img/hercules-hades.png', "Hades", "Hercules", 0, "#D9043D");
-createEvil('img/halloween-michaelmyers.jpg', "Michael Myers", "Halloween", 0, "9CC1D9");
-createEvil('img/hanniballecter.jpg', "Dr. Hannibal Lecter", "Hannibal", 0, "#D9043D");
-createEvil('img/harrypotter-lordvoldemort.jpg', "Lord Voldemort", "The Harry Potter Series", 0, "9CC1D9");
-createEvil('img/hellbound-pinhead.jpg', "Pinhead", "Hellraiser", 0, "#D9043D");
-createEvil('img/hp-BellatrixLestrange.png', "Bellatrix Lestrange", "The Harry Potter Series", 0, "9CC1D9");
-createEvil('img/it-pennywise.jpg', "Pennywise", "It", 0, "#D9043D");
-createEvil('img/lotr-saruman.jpg', "Saruman", "The Lord of the Rings Series", 0, "9CC1D9");
-createEvil('img/lotr-Sauron.jpg', "Sauron", "The Lord of the Rings Series", 0, "#D9043D");
-createEvil('img/misery-Annie Wilkes.jpg', "Annie Wilkes", "Misery", 0, "9CC1D9");
-createEvil('img/saw-jigsaw.jpg', "Jigsaw", "The Saw Franchise", 0, "#D9043D");
-createEvil('img/thelionking-scar.jpg', "Scar", "The Lion King", 0, "9CC1D9");
-createEvil("img/theshining-jacktorrance.jpg", "Jack Torrance", "The Shining", 0, "#D9043D");
-createEvil("img/Cruella-de-vil-101-dalmatians.jpg", "Cruella de Vil", "101 Dalmatians", 0, "9CC1D9");
-createEvil("img/Psycho-NormanBates.jpg", "Norman Bates", "Psycho", 0, "#D9043D");
-createEvil("img/wizardofoz-TheWickedWitchoftheWest.jpg", "The Wicked Witch of the West", "The Wizard of Oz", 0, "9CC1D9");
+createEvil("img/americanpsycho-patrickbateman.jpg", "Patrick Bateman", "American Psycho", 0);
+createEvil("img/austinpowers-drevil.jpg", "Dr. Evil", "The Austin Powers Series", 0);
+createEvil("img/batman-joker.jpg", "The Joker", "The Dark Knight", 0);
+createEvil('img/chucky.jpg', "Chucky", "Child's Play", 0);
+createEvil('img/cuckoo-nurseratched.jpg', "Nurse Ratched", "One Flew Over the Cuckoos Nest", 0);
+createEvil('img/darth-vader.jpg', "Darth Vader", "The Star Wars Saga", 0);
+createEvil('img/freddy-krueger.jpg', "Freddy Krueger", "A Nightmare on Elm Street", 0);
+createEvil('img/fridaythe13-PamelaVoorhees.png', "Pamela Voorhees", "Friday the 13th", 0);
+createEvil('img/godfather-michaelcorleone.jpg', "Michael Corleone", "The Godfather Trilogy", 0);
+createEvil('img/got-joeffreybaratheon.jpg', "Joeffrey Baratheon", "Game of Thrones", 0);
+createEvil('img/hercules-hades.png', "Hades", "Hercules", 0);
+createEvil('img/halloween-michaelmyers.jpg', "Michael Myers", "Halloween", 0);
+createEvil('img/hanniballecter.jpg', "Dr. Hannibal Lecter", "Hannibal", 0);
+createEvil('img/harrypotter-lordvoldemort.jpg', "Lord Voldemort", "The Harry Potter Series", 0);
+createEvil('img/hellbound-pinhead.jpg', "Pinhead", "Hellraiser", 0);
+createEvil('img/hp-BellatrixLestrange.png', "Bellatrix Lestrange", "The Harry Potter Series", 0);
+createEvil('img/it-pennywise.jpg', "Pennywise", "It", 0);
+createEvil('img/lotr-saruman.jpg', "Saruman", "The Lord of the Rings Series", 0);
+createEvil('img/lotr-Sauron.jpg', "Sauron", "The Lord of the Rings Series", 0);
+createEvil('img/misery-Annie Wilkes.jpg', "Annie Wilkes", "Misery", 0);
+createEvil('img/saw-jigsaw.jpg', "Jigsaw", "The Saw Franchise", 0);
+createEvil('img/thelionking-scar.jpg', "Scar", "The Lion King", 0);
+createEvil("img/theshining-jacktorrance.jpg", "Jack Torrance", "The Shining", 0);
+createEvil("img/Cruella-de-vil-101-dalmatians.jpg", "Cruella de Vil", "101 Dalmatians", 0);
+createEvil("img/Psycho-NormanBates.jpg", "Norman Bates", "Psycho", 0);
+createEvil("img/wizardofoz-TheWickedWitchoftheWest.jpg", "The Wicked Witch of the West", "The Wizard of Oz", 0);
 
 //Generate a random number
 var randomNumber = function() {
@@ -94,6 +94,12 @@ var nextPhoto1 = function(e) {
   // console.log("Counter check random number: " + random1);
   evilCharacters[random1].value+=1;
   console.log(evilCharacters[random1].label + " vote TOTAL: " + evilCharacters[random1].value);
+  //adding local storage
+  var newVote = evilCharacters[random1].value;
+  var voteToSave = JSON.stringify(newVote);
+  localStorage.setItem(evilCharacters[random1].label, voteToSave);
+  var getVotes = localStorage.getItem(voteToSave);
+  JSON.parse(getVotes);
   //removing attributes for setup of next img
   var titleRemove1 = document.getElementById("photoName1");
   titleRemove1.removeChild(titleRemove1.childNodes[0]);
@@ -118,6 +124,12 @@ var nextPhoto2 = function(e) {
   // console.log("Counter check random number: " + random2);
   evilCharacters[random2].value+=1;
   console.log(evilCharacters[random2].label + " vote TOTAL: " + evilCharacters[random2].value);
+  //adding local storage
+  var newVote = evilCharacters[random2].value;
+  var voteToSave = JSON.stringify(newVote);
+  localStorage.setItem(evilCharacters[random2].label, voteToSave);
+  var getVotes = localStorage.getItem(voteToSave);
+  JSON.parse(getVotes);
   //removing attributes for setup of next img
   var titleRemove2 = document.getElementById("photoName1");
   titleRemove2.removeChild(titleRemove2.childNodes[0]);

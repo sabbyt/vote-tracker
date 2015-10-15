@@ -6,7 +6,6 @@ header, footer {
   border: solid 4px;
   border-color: #590212;
   text-align: center;
-  max-height: 20%;
   font-family: 'Marck Script', cursive;
   font-size: 1.5em;
 }
@@ -29,6 +28,7 @@ section {
 section h1 {
   margin-bottom: -10px;
   color: #590212;
+  margin-top: 10px;
 }
 
 section h2 {
@@ -41,9 +41,14 @@ color: #024959;
 }
 
 article {
-  width: 45%;
+  width: 30%;
   display: inline-block;
   text-align: center;
+  max-height: 25%;
+}
+
+canvas {
+  margin-top: 100px;
 }
 
 figure img {
@@ -51,12 +56,13 @@ figure img {
   display: block;
   width: 200px;
   position: relative;
-  left: 30%;
+  left: 20%;
+  max-height: 25%;
 
 }
 
 footer p img {
-  margin-top: -10px;
+  margin-top: -20px;
   margin-bottom: -20px;
   padding-right: 10px;
 }

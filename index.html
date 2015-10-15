@@ -3,6 +3,7 @@
 <head>
   <title>The Evil Rank-O-Meter</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="skeleton.css">
   <link href='https://fonts.googleapis.com/css?family=Marck+Script' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
   <script src="Chart.js"></script>
@@ -25,6 +26,10 @@
       </figure>
     </article>
 
+    <article id="voteChartDisplay">
+      <canvas id="voteChart"></canvas>
+    </article>
+
     <article class='title'>
       <h2 id='photoName2'></h2>
       <h4 class='title' id="movie2"></h4>
@@ -32,8 +37,6 @@
         <img id='photoGen2' src='' />
       </figure>
     </article>
-
-    <canvas id="voteChart" height="300"></canvas>
 
   </section>
 

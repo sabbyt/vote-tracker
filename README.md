@@ -21,3 +21,7 @@
 10/14/2015:
 - Pair programming with Roland.
 - Added functional chart.js script.
+- Cleaned up app.js code a bit.
+
+10/15/2015:
+- Added functional local storage to save votes on refresh.
