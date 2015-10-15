@@ -19,4 +19,5 @@
 - Started charting votes.
 
 10/14/2015:
--
+- Pair programming with Roland.
+- Added functional chart.js script.
