@@ -25,3 +25,4 @@
 
 10/15/2015:
 - Added functional local storage to save votes on refresh.
+- Updated styling.

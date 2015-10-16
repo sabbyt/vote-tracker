@@ -29,6 +29,7 @@ section h1 {
   margin-bottom: -10px;
   color: #590212;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 section h2 {
@@ -41,28 +42,31 @@ color: #024959;
 }
 
 article {
-  width: 30%;
+  width: 48%;
   display: inline-block;
   text-align: center;
-  max-height: 25%;
+  max-height: 20%;
 }
 
-canvas {
-  margin-top: 100px;
+article canvas {
+  margin-top: -20px;
 }
 
 figure img {
   border: none;
   display: block;
-  width: 200px;
+  width: 300px;
   position: relative;
-  left: 20%;
   max-height: 25%;
+  left: 20%;
+}
 
+footer p {
+  margin-top: 20px;
 }
 
 footer p img {
-  margin-top: -20px;
+  margin-top: 0px;
   margin-bottom: -20px;
   padding-right: 10px;
 }
